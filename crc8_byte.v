@@ -9,8 +9,11 @@ module crc8_byte(
 		output wire complete
 	);
 
-	input shift;
-	input iterator;
+
+
+
+	reg data[7:0]
+	assign iterator = data[7];
 
 	crc8 calculate(
 				.rst_n(rst_n), 
@@ -18,13 +21,20 @@ module crc8_byte(
 				.shift(shift), 
 				.clr(clr), 
 				.in(iterator), 
-				.ouput(out)) 
+				.ouput(out)
+				) 
 
-	for(i = 0; i < 8; i=i+1) begin
-		
-	end
-	
-	reg [2:0] counter; 
+
 
 	always @(posedge clk)
-		if(!rst_in)
+		begin
+		if(enable)
+			shift <= 1;
+			data <= {data[6:0], reg[7]};
+		end
+
+	
+
+
+
+endmodule
