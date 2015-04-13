@@ -7,7 +7,7 @@ module crc8(
    output reg[7:0] crc
    );
 
-//if not reset, input 0
+//if reset is low, input 0
 //if clear, input 0
 //if shift, then: new reg [7:0] = reg [6:3] ; xor manipulations for the rest
 
