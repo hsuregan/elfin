@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Regan/ELFIN/test
+vcrc8
+!s110 1428896407
+!i10b 1
+!s100 @i4PDXOP9mjL^03_UWKP]3
+IoOECm<M4a_N^^YmP3]b6G1
+V`JN@9S9cnhjKRR_L]QIcM3
+dC:/Users/Regan/Desktop/ELF/elfin/crc_encode
+w1428896403
+8C:\Users\Regan\Desktop\ELF\elfin\crc8.v
+FC:\Users\Regan\Desktop\ELF\elfin\crc8.v
+L0 1
+OW;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1428896407.941000
+!s107 C:\Users\Regan\Desktop\ELF\elfin\crc8.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Regan\Desktop\ELF\elfin\crc8.v|
+!s101 -O0
+!i113 1
+o-work work -O0
