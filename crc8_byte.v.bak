@@ -57,7 +57,7 @@ module crc8_byte(
 			begin
 				shift <= 0; //do not shift into pat's module
 				counter <= 0; //set counter back to zero
-				process <= 1; //crc for byte complete
+				complete <= 1; //crc for byte complete
 			end else if(!rst_n) //case in which rst, set counter to 0, INSTANTIATES
 			begin
 				data <= in;
