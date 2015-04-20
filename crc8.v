@@ -15,8 +15,8 @@ module crc8(
    always @(posedge clk or negedge rst_n)
      if (!rst_n) crc <= 0;
      else if (clr) crc <= 0;
-     else if (shift) crc <= {crc[6:0], in};
-     //else if (shift) crc <= {crc[6:3],crc[7]^crc[2],crc[7]^crc[1],crc[7]^in};
+     //else if (shift) crc <= {crc[6:0], in};
+     else if (shift) crc <= {crc[6:3],crc[7]^crc[2],crc[7]^crc[1],crc[7]^in};
  
  
  
