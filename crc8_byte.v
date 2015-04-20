@@ -28,7 +28,7 @@ module crc8_byte(
 	//counter
 	always @(posedge clk or negedge rst_n)
 	begin
-		if(rst_n && (counter < 7))	//processing bits
+		if(rst_n && (counter < 8))	//processing bits
 			counter <= counter + 1;
 		else if(!rst_n) 	//one byte processed:
 			counter <= 0;
