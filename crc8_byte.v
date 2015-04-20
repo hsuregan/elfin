@@ -11,6 +11,8 @@ module crc8_byte(
 	
 
 	reg[2:0] counter; //at 3'b111; turn complete one
+	reg byte_processed;
+	assign complete = byte_processed;
 	wire cur_bit; //points to most significant bit in the input byte
 	assign cur_bit = in[counter];
 
@@ -24,19 +26,21 @@ module crc8_byte(
 				);
 
 	//counter
-	always @(posedge clk or negedge rst)
+	always @(posedge clk or negedge rst_n)
 	begin
-		if((rst_n && (counter < 7))	//processing bits
-			counter = counter + 1;
-		else if(!rst) 	//one byte processed:
-			counter = 0;
+		if(rst_n && (counter < 7))	//processing bits
+			counter <= counter + 1;
+		else if(!rst_n) 	//one byte processed:
+			counter <= 0;
 	end
 
 	//complete
 	always @(posedge clk)
 	begin
 		if(counter == 7)
-			complete = 0;
+			byte_processed <= 1;
+		else
+			byte_processed <= 0;
 	end
 
 
