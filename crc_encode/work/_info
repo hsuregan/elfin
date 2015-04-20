@@ -9,59 +9,80 @@ z2
 cModel Technology
 dC:/Users/Regan/ELFIN/test
 vcrc8
-!s110 1428896407
+Z0 !s110 1429494411
 !i10b 1
 !s100 @i4PDXOP9mjL^03_UWKP]3
-IoOECm<M4a_N^^YmP3]b6G1
-Z0 V`JN@9S9cnhjKRR_L]QIcM3
-Z1 dC:/Users/Regan/Desktop/ELF/elfin/crc_encode
-w1428896403
-8C:\Users\Regan\Desktop\ELF\elfin\crc8.v
-FC:\Users\Regan\Desktop\ELF\elfin\crc8.v
+I8;5Ld?^2RA[`acTPIamFE2
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 dC:/Users/Regan/Desktop/ELF/elfin/crc_encode
+w1429494319
+8C:/Users/Regan/Desktop/ELF/elfin/crc8.v
+FC:/Users/Regan/Desktop/ELF/elfin/crc8.v
 L0 1
-Z2 OW;L;10.3c;59
+Z3 OW;L;10.3c;59
 r1
 !s85 0
 31
-!s108 1428896407.941000
-!s107 C:\Users\Regan\Desktop\ELF\elfin\crc8.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Regan\Desktop\ELF\elfin\crc8.v|
+!s108 1429494411.294000
+!s107 C:/Users/Regan/Desktop/ELF/elfin/crc8.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Regan/Desktop/ELF/elfin/crc8.v|
 !s101 -O0
 !i113 1
-Z3 o-work work -O0
+Z4 o-work work -O0
 vcrc8_byte
-!s110 1429492076
-!i10b 1
-!s100 fgViZa1cBz`UnPd9UOL4T0
-Ij3Ni?`NYlbW:K8P@e11mV0
 R0
+!i10b 1
+!s100 THco^nLMgEiR`DC2EYn^j0
+ICQIlQATC4Q=WCH53K^0>:0
 R1
-w1429492071
+R2
+w1429493897
 8C:\Users\Regan\Desktop\ELF\elfin\crc8_byte.v
 FC:\Users\Regan\Desktop\ELF\elfin\crc8_byte.v
 L0 1
-R2
+R3
 r1
 !s85 0
 31
-!s108 1429492076.863000
+!s108 1429494411.184000
 !s107 C:\Users\Regan\Desktop\ELF\elfin\crc8_byte.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Regan\Desktop\ELF\elfin\crc8_byte.v|
 !s101 -O0
 !i113 1
+R4
+vcrc8_byte_tb
+R0
+!i10b 1
+!s100 fPXH310j`;B2n=]@o0fJd3
+I>LF0NBWT0XSdoM<`TFk=L2
+R1
+R2
+w1429494404
+8C:/Users/Regan/Desktop/ELF/elfin/crc8_byte_tb.v
+FC:/Users/Regan/Desktop/ELF/elfin/crc8_byte_tb.v
+L0 1
 R3
+r1
+!s85 0
+31
+!s108 1429494411.394000
+!s107 C:/Users/Regan/Desktop/ELF/elfin/crc8_byte_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Regan/Desktop/ELF/elfin/crc8_byte_tb.v|
+!s101 -O0
+!i113 1
+R4
 vparallel_crc_ccitt
 !s110 1428897870
 !i10b 1
 !s100 ;ZPGQ=?=V4kDbO2Gnd7:P2
 I7Vel08YOzNgdacZnQ2a3]1
-R0
 R1
+R2
 w1428897825
 8C:/Users/Regan/Desktop/ELF/elfin/crc8_ex.v
 FC:/Users/Regan/Desktop/ELF/elfin/crc8_ex.v
 L0 1
-R2
+R3
 r1
 !s85 0
 31
@@ -70,4 +91,4 @@ r1
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Regan/Desktop/ELF/elfin/crc8_ex.v|
 !s101 -O0
 !i113 1
-R3
+R4

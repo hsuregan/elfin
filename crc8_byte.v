@@ -22,7 +22,7 @@ module crc8_byte(
 				.shift(enable), 
 				.clr(clr), 
 				.in(cur_bit), 
-				.ouput(out) //output of my module is the crc 
+				.crc(out) //output of my module is the crc 
 				);
 
 	//counter
