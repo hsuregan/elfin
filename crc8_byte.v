@@ -27,16 +27,16 @@ module crc8_byte(
 				.clr(clr), 
 				.in(cur_bit), 
 				.crc(out) //output of my module is the crc 
-				);
+			);
 
 	//enable logic
 	//bc enable is one clock pulse, sample enable and store into crc8enable
 	always @(posedge clk or negedge rst_n)
 	begin
-		if (!rst_n) crc8enable <= 0;
-		else if(enable) crc8enable <= 1;
-		else if(counter == 8) crc8enable <= 0; // counter = 8 ? IDLE : ACTIVE
-
+		if (!rst_n) crc8enable <= 0; //rst low, disable
+		else if(enable) crc8enable <= 1; // otherwise if enable pulse, store enable
+		else if(counter == 8) crc8enable <= 0; // otherwise counter == 8 ? IDLE : ACTIVE
+		//otherwise maintain enable
 	end
 	
 
@@ -45,12 +45,7 @@ module crc8_byte(
 	begin
 		if (!rst_n) counter <= 8;
 		else if (counter < 8) counter <= counter + 1;
-		else if (enable) counter <= 0; //IDLE -> ACTIVE
-
-						/*if(rst_n && (counter < 8))	//processing bits
-							counter <= counter + 1;
-						else if(!rst_n) 	//one byte processed:
-							counter <= 0;*/
+		else if (crc8enable) counter <= 0; //enable takes IDLE -> ACTIVE
 	end
 
 	//complete
