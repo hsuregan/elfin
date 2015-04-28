@@ -12,18 +12,20 @@ module crc8_byte(
 
 	reg[3:0] counter; //at 3'b111; turn complete on
 	reg byte_processed;
-	reg crc8enable; //!ASSUME: enable is a one clock pulse
+	//reg crc8enable; //!ASSUME: enable is a one clock pulse
+	wire crc_enable;
+	assign crc_enable = rst_n & enable & (counter < 8);
 
 	assign complete = byte_processed;
 	wire cur_bit; //points to most significant bit in the input byte
-	assign cur_bit = in[counter];
+	assign cur_bit = in[7-counter];
 
 
 
 	crc8 calculate(
 				.rst_n(rst_n), 
 				.clk(clk), 
-				.shift(enable), //switch out enable w crc8enable 
+				.shift(crc_enable), //switch out enable w crc8enable 
 				.clr(clr), 
 				.in(cur_bit), 
 				.crc(out) //output of my module is the crc 
@@ -31,21 +33,27 @@ module crc8_byte(
 
 	//enable logic
 	//bc enable is one clock pulse, sample enable and store into crc8enable
-	always @(posedge clk or negedge rst_n)
-	begin
-		if (!rst_n) crc8enable <= 0; //rst low, disable
-		else if(enable) crc8enable <= 1; // otherwise if enable pulse, store enable
-		else if(counter == 8) crc8enable <= 0; // otherwise counter == 8 ? IDLE : ACTIVE
+	//always @(posedge clk or negedge rst_n)
+	//begin
+	//	if (!rst_n) crc8enable <= 0; //rst low, disable
+	//	else if(enable) crc8enable <= 1; // otherwise if enable pulse, store enable
+	//	else if(counter == 8) crc8enable <= 0; // otherwise counter == 8 ? IDLE : ACTIVE
 		//otherwise maintain enable
-	end
-	
+	//end
 
 	//counter
 	always @(posedge clk or negedge rst_n)
 	begin
-		if (!rst_n) counter <= 8;
-		else if (counter < 8) counter <= counter + 1;
-		else if (crc8enable) counter <= 0; //enable takes IDLE -> ACTIVE
+		$display(counter);
+		$display(rst_n);
+		if (!rst_n) begin
+			$display("!rst_n");
+			counter <= 8;
+		end
+		else if (counter < 8) begin
+			counter <= counter + 1;
+		end
+		else if (enable) counter <= 0; //enable takes IDLE -> ACTIVE
 	end
 
 	//complete

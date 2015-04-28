@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Regan/Documents/csm152a
+vcrc8
+Z0 !s110 1430186671
+!i10b 1
+!s100 2^L=a00Sl?`7iKDWIOk;V0
+IbPQ`Y2=`A;c9J?aUVI?g]0
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 dC:/Users/Regan/Desktop/ELF/elfin
+w1430184978
+8C:/Users/Regan/Desktop/ELF/elfin/crc8.v
+FC:/Users/Regan/Desktop/ELF/elfin/crc8.v
+L0 1
+Z3 OW;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1430186671.313000
+!s107 C:/Users/Regan/Desktop/ELF/elfin/crc8.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Regan/Desktop/ELF/elfin/crc8.v|
+!s101 -O0
+!i113 1
+Z4 o-work work -O0
+vcrc8_byte
+R0
+!i10b 1
+!s100 KMDJkc0kR84V_cKN1nEaE1
+Ie6]Ha7aM]2ePdERf5@zLK0
+R1
+R2
+w1430186668
+8C:\Users\Regan\Desktop\ELF\elfin\crc8_byte.v
+FC:\Users\Regan\Desktop\ELF\elfin\crc8_byte.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1430186671.423000
+!s107 C:\Users\Regan\Desktop\ELF\elfin\crc8_byte.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Regan\Desktop\ELF\elfin\crc8_byte.v|
+!s101 -O0
+!i113 1
+R4
+vcrc8_byte_tb
+R0
+!i10b 1
+!s100 E9<>CmVe2CT`:lW:KNgZY2
+I[jjU?i569IhG]BF7>^FZJ3
+R1
+R2
+w1430186418
+8C:/Users/Regan/Desktop/ELF/elfin/crc8_byte_tb.v
+FC:/Users/Regan/Desktop/ELF/elfin/crc8_byte_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1430186671.523000
+!s107 C:/Users/Regan/Desktop/ELF/elfin/crc8_byte_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Regan/Desktop/ELF/elfin/crc8_byte_tb.v|
+!s101 -O0
+!i113 1
+R4

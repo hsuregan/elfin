@@ -26,8 +26,7 @@ initial begin
 	#10	in = 0'b10101110;
 	//#200 rst_n <= 0;
 	//#210 rst_n <= 1;
-	#20 in = 0'b11111111;
-	#40 in = 0'b11101010;
+
 end
 
 endmodule

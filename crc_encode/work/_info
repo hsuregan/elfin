@@ -30,23 +30,23 @@ r1
 !i113 1
 Z4 o-work work -O0
 vcrc8_byte
-R0
+!s110 1430081390
 !i10b 1
-!s100 aD5dUko?_V91A[EB]PGUA3
-IT_YATI>V2i7[CZo;fCg822
+!s100 CZ14li?<^WE8dTjXdzU3g3
+ICz`0<9X;IEI=IY96NZ;VB0
 R1
 R2
-w1429494802
-8C:\Users\Regan\Desktop\ELF\elfin\crc8_byte.v
-FC:\Users\Regan\Desktop\ELF\elfin\crc8_byte.v
+w1430081093
+8C:/Users/Regan/Desktop/ELF/elfin/crc8_byte.v
+FC:/Users/Regan/Desktop/ELF/elfin/crc8_byte.v
 L0 1
 R3
 r1
 !s85 0
 31
-!s108 1429495447.113000
-!s107 C:\Users\Regan\Desktop\ELF\elfin\crc8_byte.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Regan\Desktop\ELF\elfin\crc8_byte.v|
+!s108 1430081390.558000
+!s107 C:/Users/Regan/Desktop/ELF/elfin/crc8_byte.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Regan/Desktop/ELF/elfin/crc8_byte.v|
 !s101 -O0
 !i113 1
 R4
