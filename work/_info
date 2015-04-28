@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Users/Regan/Documents/csm152a
 vcrc8
-Z0 !s110 1430186671
+Z0 !s110 1430188452
 !i10b 1
 !s100 2^L=a00Sl?`7iKDWIOk;V0
 IbPQ`Y2=`A;c9J?aUVI?g]0
@@ -23,7 +23,7 @@ Z3 OW;L;10.3c;59
 r1
 !s85 0
 31
-!s108 1430186671.313000
+!s108 1430188452.604000
 !s107 C:/Users/Regan/Desktop/ELF/elfin/crc8.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Regan/Desktop/ELF/elfin/crc8.v|
 !s101 -O0
@@ -32,11 +32,11 @@ Z4 o-work work -O0
 vcrc8_byte
 R0
 !i10b 1
-!s100 KMDJkc0kR84V_cKN1nEaE1
-Ie6]Ha7aM]2ePdERf5@zLK0
+!s100 TmPd;jBAXd6<i<<ohXLI21
+I7FNzPIKd9fZU?kK6k22]m3
 R1
 R2
-w1430186668
+w1430187941
 8C:\Users\Regan\Desktop\ELF\elfin\crc8_byte.v
 FC:\Users\Regan\Desktop\ELF\elfin\crc8_byte.v
 L0 1
@@ -44,7 +44,7 @@ R3
 r1
 !s85 0
 31
-!s108 1430186671.423000
+!s108 1430188452.714000
 !s107 C:\Users\Regan\Desktop\ELF\elfin\crc8_byte.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Regan\Desktop\ELF\elfin\crc8_byte.v|
 !s101 -O0
@@ -53,11 +53,11 @@ R4
 vcrc8_byte_tb
 R0
 !i10b 1
-!s100 E9<>CmVe2CT`:lW:KNgZY2
-I[jjU?i569IhG]BF7>^FZJ3
+!s100 UGT`lV[en3mGC<U_?HAJV3
+I7`_a@APd`X:C65b^a4JKY1
 R1
 R2
-w1430186418
+w1430188427
 8C:/Users/Regan/Desktop/ELF/elfin/crc8_byte_tb.v
 FC:/Users/Regan/Desktop/ELF/elfin/crc8_byte_tb.v
 L0 1
@@ -65,7 +65,7 @@ R3
 r1
 !s85 0
 31
-!s108 1430186671.523000
+!s108 1430188452.824000
 !s107 C:/Users/Regan/Desktop/ELF/elfin/crc8_byte_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Regan/Desktop/ELF/elfin/crc8_byte_tb.v|
 !s101 -O0

@@ -19,11 +19,15 @@ end
 initial begin
 	clk <= 0;
 	rst_n <= 1;
-	enable <= 1;
 	clr <= 0;
 	#5 rst_n <= 0;
 	#6 rst_n <= 1;
 	#10	in = 0'b10101110;
+	#100 enable <= 1;
+	#5 enable <= 0;
+	#200 in = 0'b00001111;
+	#500 enable <= 1;
+	#10 enable <= 0;
 	//#200 rst_n <= 0;
 	//#210 rst_n <= 1;
 
