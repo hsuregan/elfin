@@ -15,8 +15,12 @@ module crc8_byte(
 	wire crc_enable;  //!ASSUME: enable is a one clock pulse
 	assign crc_enable = counter < 8;
 
+	//CAN I DO EITHER OF THESE (LOGIC WISE?)
+	//assign complete = (out == in);
+	//assign complete = (counter == 7)&rst_n;
+
 	assign complete = byte_processed;
-	wire cur_bit; //points to most significant bit in the input byte
+	wire cur_bit; //the bit that is fed into crc8
 	assign cur_bit = in[7-counter];
 
 	crc8 calculate(
@@ -31,24 +35,16 @@ module crc8_byte(
 	//counter
 	always @(posedge clk or negedge rst_n)
 	begin
-		if (!rst_n) begin
-			counter <= 8;
-		end
+		if (!rst_n) counter <= 8;
 		else if (enable) counter <= 0; //enable takes IDLE state to ACTIVE state
-		else if (counter < 8) begin
-			counter <= counter + 1;
-		end
+		else if (counter < 8) counter <= counter + 1;
 	end
 
-	//complete
 	always @(posedge clk)
 	begin
-		if (!rst_n)
-			byte_processed <= 0;
-		else if(counter == 7)
-			byte_processed <= 1;
-		else
-			byte_processed <= 0;
+		if (!rst_n) byte_processed <= 0;
+		else if(counter == 7) byte_processed <= 1;
+		else byte_processed <= 0;
 	end
 
 
