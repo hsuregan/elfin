@@ -40,7 +40,7 @@ module crc8_byte(
 		else if (counter < 8) counter <= counter + 1;
 	end
 
-	always @(posedge clk)
+	always @(posedge clk or negedge rst_n)
 	begin
 		if (!rst_n) byte_processed <= 0;
 		else if(counter == 7) byte_processed <= 1;
