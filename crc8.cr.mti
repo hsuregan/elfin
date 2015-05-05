@@ -1,4 +1,11 @@
-C:/Users/Regan/Desktop/ELF/elfin/crc8.v {1 {vlog -work work -stats=none C:/Users/Regan/Desktop/ELF/elfin/crc8.v
+C:/Users/Regan/Desktop/ELF/elfin/crc8_byte.v {1 {vlog -work work -stats=none C:/Users/Regan/Desktop/ELF/elfin/crc8_byte.v
+Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module crc8_byte
+
+Top level modules:
+	crc8_byte
+
+} {} {}} C:/Users/Regan/Desktop/ELF/elfin/crc8.v {1 {vlog -work work -stats=none C:/Users/Regan/Desktop/ELF/elfin/crc8.v
 Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
 -- Compiling module crc8
 
