@@ -15,8 +15,7 @@ module crc8_byte(
 	wire crc_enable;  //!ASSUME: enable is a one clock pulse
 	assign crc_enable = counter < 8;
 
-	//CAN I DO EITHER OF THESE (LOGIC WISE?)
-	//assign complete = (out == in);
+	//CAN I DO THis?
 	//assign complete = (counter == 7)&rst_n;
 
 	assign complete = byte_processed;
